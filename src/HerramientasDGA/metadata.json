@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "reportes_grafico.exe",
+    "descripcion": "Genera reportes gráficos en Excel.",
+    "sistema": "Windows, Excel",
+    "anio": 2025
+  },
+  {
+    "nombre": "validacionPython.py",
+    "descripcion": "Script para validación de CURP.",
+    "sistema": "Python 3.10",
+    "anio": 2025
+  }
+]

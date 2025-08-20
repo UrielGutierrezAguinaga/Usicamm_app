@@ -1,0 +1,170 @@
+*{ /* Importa la fuente Montserrat desde Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  font-family: 'Montserrat', sans-serif;
+}
+.table-container {
+  margin: 0 auto; /* Centra la tabla horizontalmente */
+  padding: 1rem; /* Agrega espacio alrededor de la tabla */
+}
+
+table {
+ 
+  margin: 0 auto; /* Centra la tabla horizontalmente */
+  border-collapse: collapse; /* Fusiona los bordes de las celdas */
+  background-color: rgb(111, 114, 113); /* Color de fondo gris */
+  border: 1px solid rgb(0, 0, 0); /* Borde de la tabla con color negro */
+}
+
+th,
+td {
+  padding: 0.3rem; /* Reduce el espacio interno para celdas */
+  text-align: left; /* Alinea el contenido de celdas a la izquierda */
+  border: 1px solid rgb(0, 0, 0); /* Borde de celdas con color negro */
+  color: white; /* Color de texto en celdas */
+  font-size: 16px; /* Reduce el tamaño de la fuente */
+  vertical-Align: 'middle'; 
+}
+
+th {
+  background-color: rgb(105, 28, 50); /* Color de fondo de las celdas de encabezado */
+}
+
+/* Estilo específico para filas con valor "DORADO" en la primera columna */
+tr[data-color="DORADO"] {
+  background-color: rgb(221, 201, 163);
+}
+
+/* Estilo específico para filas con valor "GRIS" en la primera columna */
+tr[data-color="GRIS"] {
+  background-color: rgb(111, 114, 113);
+}
+
+.Imagentitulo {
+  padding: 5%;
+}
+
+/* Estilos de los filtros */
+/* Contenedor principal */
+.filter-container {
+  
+  margin-left: -9%;
+  justify-content: space-between;
+  padding: 5%; /* Espaciado del 5% en los lados */
+}
+
+/* Estilos para los contenedores de cada filtro */
+.filter-box {
+  flex: 1; /* Toma el espacio disponible, dividiendo en dos partes iguales */
+}
+
+/* Estilos para los títulos y los input */
+h3 {
+  color: rgb(255, 255, 255);
+  font-weight: bold; /* Texto en negrita */
+}
+
+input {
+  text-transform: uppercase;
+  font-weight: bold; /* Texto en negrita */
+  padding: 5px; /* Añadir un poco de espacio alrededor del input */
+  width: 90%; /* Ocupar el ancho completo del contenedor */
+  box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
+h3.mensaje {
+  font-family: Montserrat;
+  text-align: center;
+  color: rgb(221, 201, 163);
+  font-size: 30px; /* Reduce el tamaño de la fuente */
+  margin-top: 10%;
+}
+
+/* Estilos de footer */
+/* Estilos básicos para el footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos para los iconos */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Centra los elementos dentro de su contenedor */
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10%; /* Espaciado entre los iconos */
+  vertical-align: middle; /* Alinea verticalmente los elementos */
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+img.facebook,
+img.x,
+img.usicamm {
+  height: 30px; /* Establece la altura deseada (ajusta según sea necesario) */
+  width: auto; /* Mantiene la proporción original */
+  margin-left: 10%; /* Mueve las imágenes hacia la derecha un 10% */
+}
+
+p {
+  display: inline-block; /* Permite que el párrafo se comporte como un bloque en línea */
+  vertical-align: middle; /* Alinea verticalmente con los elementos de la lista */
+  margin: 0; /* Elimina márgenes para un alineamiento preciso */
+}
+
+/* Estilos de los filtros para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  .filter-container {
+    flex-direction: column; /* Cambia a disposición de columna en dispositivos móviles */
+    padding: 5%; /* Ajusta el espaciado en los lados para dispositivos móviles */
+  }
+
+  .filter-box {
+    margin-bottom: 10px; /* Agrega espacio entre los contenedores de filtro en dispositivos móviles */
+  }
+  .table-container {
+    padding: 0.5rem; /* Ajusta el espacio alrededor de la tabla para dispositivos móviles */
+  }
+
+  table {
+    font-size: 9px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+  }
+
+  h3 {
+    font-size: 16px; /* Ajusta el tamaño del texto para dispositivos móviles */
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+}
+
+/* Estilos generales para dispositivos de pantalla más grandes */
+.filter-container {
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%; /* Espaciado del 10% en los lados */
+}
+
+.filter-box {
+  flex: 1; /* Toma el espacio disponible, dividiendo en dos partes iguales */
+}
+
+h3 {
+  margin-bottom: 1%;
+  color: rgb(255, 255, 255);
+  font-weight: bold; /* Texto en negrita */
+}
+
+.hidden {
+  display: none;
+}

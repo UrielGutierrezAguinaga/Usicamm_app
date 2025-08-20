@@ -1,0 +1,57 @@
+.leyenda {
+    visibility: hidden;
+    font-size: 30%;
+}
+
+@media print {
+    /* Ocultar todo el contenido que no sea el reporte */
+  
+   
+    /* Solo mostrar el reporte */
+    .reporte-container, .reporte-container * {
+        visibility: visible;
+    }
+
+    /* Estilos para alinear el reporte al inicio de la página */
+    .reporte-container {
+        text-align: left;
+        position: relative; /* Cambiar a relative para alineación */
+        top: 0%; /* Alinear al inicio de la página */
+        left: 40%;
+         transform: translateX(-45%); /* Centrar horizontalmente */
+        border: 1px solid rgb(221,201,163); /* Mantener el borde */
+        background-color: white; /* Fondo blanco para impresión */
+        color: black; /* Asegurar que el texto sea legible en impresión */
+        padding: 15px;
+        margin: 0;
+        width: auto; /* Ajustar ancho según contenido */
+    }
+
+    /* Ajustar tamaño de texto y estilos */
+    .reporte-container h1 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .reporte-container p {
+        font-size: 8pt;
+        line-height: 1.5; /* Espacio entre líneas para mejor lectura */
+    }
+
+    /* Ocultar botones de navegación */
+    button {
+        display: none;
+    }
+  
+    /* Ajustes para el body durante la impresión */
+    body {
+        margin: 0;
+        padding: 0;
+        text-align: center; /* Centrar contenido */
+    }
+}
+.leyenda {
+    visibility: block;
+    color: rgb(105,28,50);
+    font-size: 30%;
+}

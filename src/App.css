@@ -1,38 +1,15 @@
-.App {
-  text-align: center;
+/* Estilos para el contenedor del SVG y el título */
+.svg-container {
+  position: relative; /* Asegura que el contenedor tenga un contexto de posicionamiento */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Estilos para el SVG */
+svg {
+ 
+}
+/* Media query para pantallas más pequeñas */
+@media only screen and (max-width: 767px) {
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
