@@ -1,9 +1,8 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import WebFont from 'webfontloader';
-import Contenedor from'./elementos/Contenedor';
+import Ventana from './elementos/Ventana';
 import Navegador from './elementos/Navegador';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Lectura from './componentes/lectura';
@@ -31,7 +30,7 @@ const Index = () => {
     </Helmet>
 
     <BrowserRouter>
-      <Contenedor>
+      <Ventana>
       
           <Routes>
             <Route path='/InicioSesion' element={<InicioSesion/>}/>
@@ -40,13 +39,8 @@ const Index = () => {
             <Route path='/EleccionEducacion' element={<Principal2/>}/>
             <Route path='/Lectura' element={<Lectura/>}/>
             <Route path='/' element={<App/>}/>
-          </Routes>
-          
-        
-       
-      </Contenedor>
-  
-
+          </Routes>  
+      </Ventana>
     </BrowserRouter>
     <Navegador />
     </>

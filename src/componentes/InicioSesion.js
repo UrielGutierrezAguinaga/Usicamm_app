@@ -2,6 +2,7 @@
 import React from "react";
 import acceso from "../Imagenes/acceso.png"; // imagen
 
+
 export default function InicioSesion() {
   return (
     <div style={{
